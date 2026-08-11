@@ -1,0 +1,19 @@
+{
+  "_comment": "Merge these into the permissions.deny array in ~/.claude/settings.json. The // prefix anchors at the filesystem root so the rules apply in every folder, not only the current one.",
+  "permissions": {
+    "deny": [
+      "Read(//**/.env)",
+      "Read(//**/.env.*)",
+      "Read(//**/*client_secret*.json)",
+      "Read(//**/*service_account*.json)",
+      "Read(//**/credentials.json)",
+      "Read(//**/token.json)",
+      "Read(//**/*.pem)",
+      "Read(//**/id_rsa*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.config/gcloud/**)",
+      "Read(~/.gnupg/**)"
+    ]
+  }
+}
