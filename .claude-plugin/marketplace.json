@@ -1,0 +1,20 @@
+{
+  "name": "first-agent",
+  "description": "Onboarding for people new to working with agents on their own computer.",
+  "owner": {
+    "name": "Ksenia Pylypiuk",
+    "email": "ksenia.pylypiuk@incandescent.com"
+  },
+  "plugins": [
+    {
+      "name": "first-agent",
+      "source": "./plugins/first-agent",
+      "description": "Guided setup that turns a new Mac into one you can build on with an AI agent, run by the agent itself.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Ksenia Pylypiuk",
+        "email": "ksenia.pylypiuk@incandescent.com"
+      }
+    }
+  ]
+}

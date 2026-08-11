@@ -1,0 +1,12 @@
+{
+  "name": "first-agent",
+  "description": "Guided setup that turns a new Mac into one you can build on with an AI agent, run by the agent itself. Teaches scope, permissions, memory, secrets, and MCPs by setting them up.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ksenia Pylypiuk",
+    "email": "ksenia.pylypiuk@incandescent.com"
+  },
+  "homepage": "https://github.com/kseniapylypiuk/first-agent",
+  "repository": "https://github.com/kseniapylypiuk/first-agent",
+  "license": "MIT"
+}
