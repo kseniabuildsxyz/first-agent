@@ -33,7 +33,8 @@ deny() {
 
 if command -v gitleaks >/dev/null 2>&1; then
   if ! output=$(gitleaks protect --staged --redact --no-banner 2>&1); then
-    count=$(printf '%s' "$output" | grep -ci 'secret' || true)
+    count=$(printf '%s' "$output" | grep -oE 'leaks found: [0-9]+' | grep -oE '[0-9]+' | tail -1)
+    [ -z "$count" ] && count="one or more"
     deny "gitleaks found what looks like a credential in the staged changes ($count finding(s)). The commit was blocked. Show the user which file it's in, help them move the value into the Keychain with /first-agent:secrets, then unstage the file and try again. Do not bypass this by disabling the check."
   fi
   exit 0

@@ -8,18 +8,18 @@ Any agent working on my computer can read this. Keep it current — a stale line
 
 **What a normal week looks like:**
 
-## Tools I use every day
+## Where I work
 
-<!-- Spreadsheets, email, Slack, a CRM, docs, a database — whatever it actually is -->
+<!-- The apps and tools I'm in every day, and where my work actually lives -->
+
+## How I run agents
+
+<!-- Claude desktop app or terminal; the folder I usually start in -->
 
 ## What I'd rather not keep doing by hand
 
-<!-- The repetitive work worth automating first -->
+<!-- The repetitive work worth building for first -->
 
 ## Off limits
 
 <!-- Files, folders, accounts, and systems no agent should touch -->
-
-## Track
-
-<!-- sheets | automation | writing -->

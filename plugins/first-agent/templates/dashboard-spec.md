@@ -1,6 +1,10 @@
-# Dashboard spec
+# Example spec — a page of sourced figures
 
-The build target for module 9. Read this fully before writing anything.
+**This is an example, not a target.** It exists to show what a spec looks like when it's precise enough for someone with no context to follow: a purpose, defined inputs, a defined output, rules that can't be broken, and a definition of done.
+
+Nothing in module 9 has to be a page, or contain figures, or look anything like this. Read it for the shape and then write your own for whatever you're actually building.
+
+What follows is the spec itself, for a single self-contained page built from researched figures.
 
 ## Research first
 
