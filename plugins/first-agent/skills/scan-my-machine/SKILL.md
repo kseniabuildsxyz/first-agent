@@ -8,6 +8,14 @@ Find credential-shaped files sitting where they shouldn't be, report them, and h
 
 Finding something is the expected outcome. Downloaded credential files are how most integrations begin. Report findings as facts, without commentary on how they got there.
 
+## Ask for the reach first
+
+Everything below is outside the folder a session is normally opened in. Say so before searching, say why, and let them decline any of it:
+
+> To do this properly I need to look outside our folder — Downloads, Desktop, Documents, and the top level of your home folder. That's where credential files end up. I'll tell you what I searched afterwards, I won't open anything that isn't credential-shaped, and you can tell me to skip any of it.
+
+macOS may also prompt for Desktop, Documents, or Downloads access at this point. That's the operating system, not this skill — say so if it appears.
+
 ## Scope
 
 Search these:
