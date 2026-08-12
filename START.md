@@ -61,7 +61,7 @@ The same pattern applies to `templates/`.
 
 ## The modules
 
-Nine modules. Two and a half to three hours if run end to end, which almost nobody should — it's built to be stopped and resumed.
+Nine modules. Modules 1–8 are about two hours together; module 9 adds another half hour to an hour. Almost nobody should do it in one sitting — it's built to be stopped and resumed, and the estimates assume nothing goes wrong.
 
 Modules 1–8 set the machine up and are worth finishing. Module 9 is optional: a build of their own choosing, which some people will want immediately and others will never do. Their machine is fully set up at the end of module 8, and you should say so.
 
