@@ -38,7 +38,13 @@ Decline outright when: the action list doesn't match the described purpose, it c
 
 ## 3. Narrow it
 
+The reason to narrow is not that a server is likely to be malicious. It's that an agent working quickly, holding write access to a live system, will eventually change something it shouldn't — not maliciously, just eagerly. That is the ordinary failure mode and it's what narrowing prevents.
+
+So the question is never "is this safe?" but "does this need to write?" If reading covers the job, remove the writing. Payments, sends, deletions, and anything that alters a system of record are decisions for a person.
+
 Assume the default configuration is broader than needed. Establish which actions the task actually requires, then reduce to those. Cheapest first:
+
+**The interface, when there is one.** For a connector managed in account settings, the actions can be switched off by hand under Settings → Connectors. Prefer this over a config file when it's available — the user can see it, change it, and undo it without help.
 
 **A setting the server already provides.** Many offer a read-only mode or a tool allowlist through an environment variable. Check the source for one before doing more work.
 
@@ -72,8 +78,14 @@ Report the final action list to the user. They should end knowing exactly what w
 
 ## Record it
 
-Append to `~/.first-agent/mcp-log.md`: the server, version or commit installed, what it was narrowed to, and the date. This is what makes re-checking possible after an update.
+Append to `~/.first-agent/mcp-log.md`: the server, version or commit installed, what it was narrowed to, what was deliberately left alone, and the date.
 
-Tell them what to do when it updates: an update can add tools and widen scopes, so the action list is worth re-listing after one. Their own copy only changes when they change it.
+Explain what the file is for rather than just writing it. These change under you — an update can add tools and ask for broader access than the version you checked. The log is what makes "what's new here?" a five-minute comparison instead of a fresh audit. Their own copy of a server only changes when they change it.
+
+## Enumerating what's already there
+
+Before any of the above, establish what the user already has. Don't rely on a single listing tool — a connector listing can come back empty while connectors are live. Read the tools actually available in the session and report that. Where the two disagree, say so and trust what you can see.
+
+For each connector, report the action count and **how many of those actions change something**. That second number is the one that matters and the one nobody looks at.
 
 $ARGUMENTS
