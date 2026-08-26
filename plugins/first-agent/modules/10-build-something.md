@@ -1,4 +1,4 @@
-# Module 9 — Build something you want (optional)
+# Module 10 — Build something you want (optional)
 
 Goal: they've built one thing they actually wanted, they know how to write a spec another agent can follow, and they know how to check whether it was followed.
 
@@ -24,7 +24,7 @@ If they'd rather stop, close out with the section at the end and leave it there.
 
 ## Do: land on the thing
 
-Start from what they told you in module 1 — the repetitive thing they'd rather not do. Propose it. If they want something else, take what they want without argument; the point is that they're motivated, not that the subject is optimal.
+Read the `## About my work` section of `~/.claude/CLAUDE.md` — the repetitive thing they'd rather not do is written there, in their words, from module 1. Propose it. If they want something else, take what they want without argument; the point is that they're motivated, not that the subject is optimal.
 
 Then scope it, holding four lines:
 
@@ -47,7 +47,7 @@ If it turns out something isn't reachable, say so immediately and offer the choi
 
 > This needs access to X, which isn't connected. Two options: I set that up first, which is about twenty minutes, or we pick a version of this that works with what you already have. Either is fine.
 
-Where a service has no built-in connector, that's module 8's territory — an official MCP server if one exists. If they use something like Zapier already, that's often the shortest path and worth naming. None of this is required today, and it's better to build something smaller that works than to spend the hour on plumbing.
+Where a service has no built-in connector, that's module 9's territory — an official MCP server if one exists. If they use something like Zapier already, that's often the shortest path and worth naming. None of this is required today, and it's better to build something smaller that works than to spend the hour on plumbing.
 
 ## Teach: how to write a spec
 
@@ -65,7 +65,19 @@ What one needs, in this order:
 
 Write it **with** them, in front of them, into a file in their project folder. Compose it out loud so they see the choices being made, and get them to say the "for" sentence in their own words rather than accepting your version.
 
-There is an example spec at `templates/dashboard-spec.md` — one worked instance, for a page of sourced figures. Show it if a concrete example helps, and be clear it's an example of the shape rather than a target to hit.
+If a concrete example helps, write a short one **for what they actually chose**, not a generic one. Six lines is enough to show the shape:
+
+```markdown
+# Weekly supplier check
+
+**For:** catching price changes before they reach an invoice, without opening twelve PDFs.
+**In:** the PDFs in ~/Desktop/agent/projects/suppliers/, one per supplier, monthly.
+**Out:** a markdown file listing any line item whose price moved more than 2% since last month.
+**Rules:** never guess at an unreadable figure — list it as unreadable. Don't edit the PDFs.
+**Done when:** I can name the changed items from the file without opening a PDF.
+```
+
+Then throw it away and write theirs. The example is there to show that five short lines can be a real spec, not to be filled in like a form.
 
 ## Do: hand it to a fresh session
 

@@ -1,4 +1,4 @@
-# Module 6 — Keys and secrets
+# Module 7 — Keys and secrets
 
 Goal: they understand what a key is, their Keychain holds one, deny rules and the commit check are in place, they know what's in a transcript, and their machine has been swept.
 
@@ -64,12 +64,16 @@ This is also the other half of module 2. A sentence in conversation shapes what 
 
 **The commit check.** The plugin ships a hook that runs gitleaks against staged changes before any commit and blocks it if something key-shaped is in there.
 
-**Check whether it's actually active** rather than assuming the module 4 install worked. If the plugin didn't install, wire it up by hand:
+**Check whether it's actually active** rather than assuming the module 5 install worked. If the plugin didn't install, wire it up by hand:
 
 1. Copy `hooks/check-staged-secrets.sh` to `~/.claude/hooks/`.
 2. Add a `hooks` entry to `~/.claude/settings.json` pointing at it.
 
-It needs `gitleaks`, installed in module 4. Say what it does and when they'll notice it, which is rarely and only when it matters.
+It needs `gitleaks` and `jq`, both installed in module 5. Say what it does and when they'll notice it, which is rarely and only when it matters.
+
+Then state its reach honestly, because the obvious assumption is wider than the truth:
+
+> This catches commits I make. If you commit in your own terminal, it isn't in the way — the check lives in my settings, not in the folder. That's worth knowing rather than discovering.
 
 ## Do: sweep their machine
 
@@ -106,8 +110,8 @@ Then the practical answer:
 Update `~/.first-agent/progress.md`:
 
 ```
-Last module completed: 6
-Next: 7
+Last module completed: 7
+Next: 8
 ```
 
 Next is short and is entirely about habits — the difference between an agent that stays useful and one that seems to get worse over a week. Ask whether they want to continue.

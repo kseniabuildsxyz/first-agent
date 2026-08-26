@@ -32,7 +32,7 @@ Read a value into a variable and pass it onward in the same command. Keep it out
 KEY=$(security find-generic-password -s firstagent-<service> -w) && <command using "$KEY">
 ```
 
-Never run the bare `find-generic-password` on its own, which prints the value to the screen and into the transcript. If someone asks to see a key, tell them Keychain Access in Applications → Utilities will show it to them directly.
+Never run the bare `find-generic-password` on its own, which prints the value to the screen and into the transcript. If someone asks to see a key, send them to Keychain Access to read it themselves — **searched for by name**, with Spotlight (**Cmd+Space**, type `keychain`). Don't send them to Applications → Utilities: as of macOS 15 the app lives in `/System/Library/CoreServices/Applications/` and no longer appears in the Utilities folder, so that route dead-ends.
 
 ## List
 

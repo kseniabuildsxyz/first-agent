@@ -18,7 +18,7 @@ You don't need to install anything first.
 6. Paste this into the chat and press enter:
 
 ```
-Read https://raw.githubusercontent.com/kseniabuildsxyz/first-agent/main/START.md and follow it exactly. I'm new to this — explain as you go and stop when you need me to do something.
+Read https://raw.githubusercontent.com/kseniabuildsxyz/first-agent/main/plugins/first-agent/START.md and follow it exactly. I'm new to this — explain as you go and stop when you need me to do something.
 ```
 
 That's it. The agent takes over. It will ask you questions, install what's missing, and stop when it needs your password or your hands on a browser.
@@ -29,21 +29,23 @@ You can quit partway through and pick up later — it keeps track of where you g
 
 - A machine set up so agents can do real work without stepping on anything
 - Credentials stored where an agent can use them but never read them
-- A standing set of rules that makes every future session better
+- A standing set of rules, written in your words, that every future session reads
 - A clear picture of what the agent can reach, and how to change it
 
 ## What's in here
 
 | Path | What it is |
 |---|---|
-| `START.md` | What the agent reads first |
+| `plugins/first-agent/START.md` | What the agent reads first |
 | `plugins/first-agent/modules/` | The walkthrough, one file per module |
 | `plugins/first-agent/skills/` | Tools the agent keeps after setup |
-| `plugins/first-agent/templates/` | Files installed onto your machine |
+| `plugins/first-agent/templates/` | Your standing rules and deny rules, installed into `~/.claude/` |
 | `plugins/first-agent/hooks/` | The check that blocks committing a key |
 
 ## Requirements
 
 macOS. Claude on a paid plan.
+
+**No GitHub account needed.** This is a public repository — installing from it downloads a copy, the same way any public file downloads. You don't need to sign up for anything, and nothing here will ask you to.
 
 Windows and Linux aren't supported.
