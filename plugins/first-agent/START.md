@@ -9,7 +9,8 @@ This walkthrough is for Claude — the desktop app or the terminal. Don't transl
 Assume they work in a senior or operating role and are new to running agents directly on their own machine.
 
 - Assume limited exposure to the terminal and how it works.
-- Assume Homebrew, git, and the GitHub CLI are not installed.
+- Assume Homebrew and git are not installed.
+- Assume they do not have a GitHub account and do not need one. Nothing here requires one.
 - Assume API keys, environment variables, and MCP servers are unfamiliar as concepts.
 - Assume they are highly capable, learn quickly, and have limited time.
 - Assume they want to understand what is happening rather than have it done for them.
@@ -49,7 +50,7 @@ Ask early — module 1 covers it — and adapt for the rest of the walkthrough.
 
 ## Getting the module files
 
-Read modules from the local `modules/` directory when you have it — you will, once this is installed as a plugin at the end of module 4.
+Read modules from the local `modules/` directory when you have it — you will, once this is installed as a plugin at the end of module 5.
 
 Until then, fetch them over HTTPS:
 
@@ -61,21 +62,30 @@ The same pattern applies to `templates/`.
 
 ## The modules
 
-Nine modules. Modules 1–8 are about two hours together; module 9 adds another half hour to an hour. Almost nobody should do it in one sitting — it's built to be stopped and resumed, and the estimates assume nothing goes wrong.
+Ten modules. Modules 1–9 are about two hours together; module 10 adds another half hour to an hour. Almost nobody should do it in one sitting — it's built to be stopped and resumed, and the estimates assume nothing goes wrong.
 
-Modules 1–8 set the machine up and are worth finishing. Module 9 is optional: a build of their own choosing, which some people will want immediately and others will never do. Their machine is fully set up at the end of module 8, and you should say so.
+Modules 1–9 set the machine up and are worth finishing. Module 10 is optional: a build of their own choosing, which some people will want immediately and others will never do. Their machine is fully set up at the end of module 9, and you should say so.
 
-| # | File | What it does |
-|---|---|---|
-| 1 | `01-getting-set-up.md` | The app, the folder, what you can reach, their profile |
-| 2 | `02-permissions-and-modes.md` | Who approves what, and the modes |
-| 3 | `03-instructions-and-memory.md` | Where instructions come from, memory, context, standing rules |
-| 4 | `04-terminal-and-toolchain.md` | Terminal, Homebrew, git, gh, installing this as a plugin |
-| 5 | `05-version-history.md` | git as a safety net |
-| 6 | `06-keys-and-secrets.md` | Keychain, deny rules, transcripts, machine sweep |
-| 7 | `07-working-habits.md` | Context, cost, forking, recovering from a bad run |
-| 8 | `08-tools-and-connectors.md` | Connectors, MCP servers, narrowing what they can do |
-| 9 | `09-build-something.md` | Optional: build something they actually want |
+| # | File | What it does | Time |
+|---|---|---|---|
+| 1 | `01-getting-set-up.md` | The app, the folder, what you can reach, what they work on | 10 min |
+| 2 | `02-permissions-and-modes.md` | Who approves what, and the modes | 10 min |
+| 3 | `03-instructions-and-memory.md` | Where instructions come from, memory, context, standing rules | 15 min |
+| 4 | `04-terminal-and-homebrew.md` | The terminal, judging a command, installing Homebrew | 15–20 min |
+| 5 | `05-installing-things.md` | git, gitleaks, jq, and installing this as a plugin | 10 min |
+| 6 | `06-version-history.md` | git as a safety net | 10 min |
+| 7 | `07-keys-and-secrets.md` | Keychain, deny rules, transcripts, machine sweep | 15 min |
+| 8 | `08-working-habits.md` | Context, cost, forking, recovering from a bad run | 10 min |
+| 9 | `09-tools-and-connectors.md` | Connectors, MCP servers, narrowing what they can do | 15 min |
+| 10 | `10-build-something.md` | Optional: build something they actually want | 30–60 min |
+
+## No GitHub account is needed
+
+Say this if it comes up, and don't let them go looking for one.
+
+This walkthrough is a public repository. Installing from it downloads a copy, the same way any public file downloads. It needs no account, no sign-in, and no `gh`. Never send them to create a GitHub account, and never run `gh auth login`.
+
+They'd want an account the day they want to put a folder somewhere other people can see it, or install something from a private repository. Neither is today.
 
 ## Tracking progress
 

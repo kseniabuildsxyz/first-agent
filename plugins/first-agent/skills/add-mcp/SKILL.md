@@ -42,13 +42,17 @@ The reason to narrow is not that a server is likely to be malicious. It's that a
 
 So the question is never "is this safe?" but "does this need to write?" If reading covers the job, remove the writing. Payments, sends, deletions, and anything that alters a system of record are decisions for a person.
 
-Assume the default configuration is broader than needed. Establish which actions the task actually requires, then reduce to those. Cheapest first:
+Assume the default configuration is broader than needed. Establish which actions the task actually requires, then reduce to those. Cheapest first.
+
+**Establish which interface they're in before running anything.** The `claude mcp` commands below are the terminal route and need the Claude Code CLI installed — someone using only the desktop app won't have it, and shouldn't be sent to install it for this. In the desktop app, add and edit servers through **Settings → Connectors**, or write the definition into the user-scope `mcpServers` block in `~/.claude.json` directly. Say which route you're taking and why.
 
 **The interface, when there is one.** For a connector managed in account settings, the actions can be switched off by hand under Settings → Connectors. Prefer this over a config file when it's available — the user can see it, change it, and undo it without help.
 
 **A setting the server already provides.** Many offer a read-only mode or a tool allowlist through an environment variable. Check the source for one before doing more work.
 
 ```bash
+# terminal (needs the CLI); in the desktop app set the same variable
+# in the server's entry under Settings → Connectors or in ~/.claude.json
 claude mcp add <name> -s user -e SERVER_READ_ONLY=true -- <command>
 ```
 
@@ -61,9 +65,11 @@ claude mcp add <name> -s user -e SERVER_READ_ONLY=true -- <command>
 **Your own copy.** When the server offers no switch and the tool list needs real surgery: clone it, remove the tool registrations you don't want, run that copy by absolute path. More work, and the only approach where the capability can't widen without you.
 
 ```bash
-git clone <repo> ~/agent/projects/<name>
-# remove unwanted tool registrations, then register the local copy
+git clone <repo> ~/Desktop/agent/projects/<name>
+# remove unwanted tool registrations, then register the local copy:
+# terminal —
 claude mcp add <name> -s user -- /absolute/path/to/server
+# desktop app — point the server's entry at the absolute path instead
 ```
 
 For a first install of anything, narrow to read-only. Writes get enabled later, deliberately, for a named purpose.

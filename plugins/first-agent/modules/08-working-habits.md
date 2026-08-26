@@ -1,4 +1,4 @@
-# Module 7 — Working habits
+# Module 8 — Working habits
 
 Goal: they know why a session degrades and what to do about it, they can start over deliberately rather than as a last resort, they know what this costs, and they ask for evidence.
 
@@ -88,7 +88,7 @@ The ladder, in order. Most things resolve at the first or second rung.
 1. **Read the actual error.** Ask to see it rather than a summary. Errors usually name the problem.
 2. **Ask what just happened.** A plain account of the last few actions often locates it immediately.
 3. **Ask for a write-up, then start a fresh session** with it.
-4. **Go back to the last saved version** — `git restore .` from module 5.
+4. **Go back to the last saved version** — `git restore .` from module 6.
 5. **Say the approach isn't working.** Not every path deserves a fifth attempt.
 
 And plainly: saying *"this isn't working, what are my options"* is a good move, not a defeat.
@@ -98,8 +98,8 @@ And plainly: saying *"this isn't working, what are my options"* is a good move, 
 Update `~/.first-agent/progress.md`:
 
 ```
-Last module completed: 7
-Next: 8
+Last module completed: 8
+Next: 9
 ```
 
 Next: how to give an agent access to a tool it doesn't have yet — their email, their spreadsheets, their systems. Ask whether they want to continue.

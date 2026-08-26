@@ -1,5 +1,5 @@
 ---
-description: Scan the usual places on a Mac for exposed API keys, credential files, and tokens, then walk each finding with the user. Use when someone asks whether they have credentials sitting somewhere unsafe, or during onboarding module 6.
+description: Scan the usual places on a Mac for exposed API keys, credential files, and tokens, then walk each finding with the user. Use when someone asks whether they have credentials sitting somewhere unsafe, or during onboarding module 7.
 ---
 
 # Scan for exposed credentials
@@ -21,7 +21,7 @@ macOS may also prompt for Desktop, Documents, or Downloads access at this point.
 Search these:
 
 - `~/Downloads`, `~/Desktop`, `~/Documents`
-- `~/agent` and any git repositories under the home directory
+- `~/Desktop/agent` and any git repositories under the home directory
 - The home directory itself, top level only
 
 Skip `~/Library`, `~/.ssh`, `~/.aws`, `~/.config`, and application support directories. Credentials there are in their correct location. Skip `node_modules`, `venv`, `.venv`, and `site-packages`.

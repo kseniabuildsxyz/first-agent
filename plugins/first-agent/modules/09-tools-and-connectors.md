@@ -1,4 +1,4 @@
-# Module 8 — Tools and connectors
+# Module 9 — Tools and connectors
 
 Goal: they know what they already have connected, they understand the three places extra capability comes from, and they've narrowed at least one thing themselves.
 
@@ -18,7 +18,7 @@ Two lines: this is about reaching their actual tools — email, documents, whate
 >
 > The ones built into your Claude account are the easiest kind. They're maintained by the company that runs the service, they're switched on in your account settings, and there's nothing to install or vet. They also follow your account — set one up here and it's there in the terminal version too, on the same login.
 
-They're managed under **Settings → Connectors**, in the same place as Plugins from module 4.
+They're managed under **Settings → Connectors**, in the same place as Plugins from module 5.
 
 ## Do: show them what they already have
 
@@ -72,7 +72,7 @@ Where the interface can't express what's needed, then reach for the alternatives
 
 For anything in category 2 or 3, there's a check to run first, and `/first-agent:add-mcp` runs it: who publishes it, whether it's maintained, the full list of actions read from the source rather than the README, which network hosts it contacts, what access it asks for, and whether it can be pinned to a version.
 
-Point back to module 4:
+Point back to module 5:
 
 > That red warning when we added the plugin marketplace said Anthropic doesn't control what's in a plugin and can't promise it won't change. That's true of MCP servers too, and it's the honest situation for anything you install. It isn't a reason to avoid them. It's the reason to know whose it is, to look at what it can do, and to keep a record.
 
@@ -89,12 +89,12 @@ Note anything left undone and why. If a connector still has change-capable actio
 Update `~/.first-agent/progress.md`:
 
 ```
-Last module completed: 8
-Next: 9 (optional)
+Last module completed: 9
+Next: 10 (optional)
 ```
 
 Then be clear about where they've got to:
 
 > That's the setup finished. Your machine is configured, your keys have somewhere to live, your work folder has a history, and you know what I can reach and how to change it. Nothing is outstanding.
 
-Module 9 is optional and it's a build of their own choosing. Describe it in two lines and let them decide whether they want it now, later, or not at all. Stopping here is a complete outcome, not an abandonment.
+Module 10 is optional and it's a build of their own choosing. Describe it in two lines and let them decide whether they want it now, later, or not at all. Stopping here is a complete outcome, not an abandonment.

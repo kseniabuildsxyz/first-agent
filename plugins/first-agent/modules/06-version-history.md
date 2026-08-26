@@ -1,4 +1,4 @@
-# Module 5 — Version history
+# Module 6 — Version history
 
 Goal: their work folder keeps a history, they've watched a restore put it back, and asking for a checkpoint before something big is a habit.
 
@@ -100,8 +100,8 @@ Two limits, so the net isn't trusted past its reach:
 Update `~/.first-agent/progress.md`:
 
 ```
-Last module completed: 5
-Next: 6
+Last module completed: 6
+Next: 7
 ```
 
 Next: where passwords and keys live, and a sweep for any sitting somewhere they shouldn't. Ask whether they want to continue.

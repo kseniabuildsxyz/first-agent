@@ -10,7 +10,7 @@
       "name": "first-agent",
       "source": "./plugins/first-agent",
       "description": "Guided setup that turns a new Mac into one you can build on with an AI agent, run by the agent itself.",
-      "version": "0.2.0"
+      "version": "0.3.0"
     }
   ]
 }

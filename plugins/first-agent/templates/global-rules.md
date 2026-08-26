@@ -2,6 +2,11 @@
 
 These apply to every session on this computer. Cut anything you disagree with â€” a rule I don't believe in is one I'll work around.
 
+## About my work
+
+<!-- What I do, where my work lives, the apps I'm in every day, and the repetitive thing worth building for.
+     Written in my words. When my work changes, I change these lines. -->
+
 ## Before you act
 
 - Propose before you build. Show me what you plan to change, then wait for my yes or my edits. Scratch work I can throw away doesn't need this.
@@ -41,8 +46,10 @@ These apply to every session on this computer. Cut anything you disagree with â€
 
 ## Where things live
 
-- Work in progress: `~/agent/projects/`
-- Experiments: `~/agent/scratch/`
+- Work in progress: `~/Desktop/agent/projects/`
+- Experiments: `~/Desktop/agent/scratch/`
 - Keys and tokens: my Keychain
+- What's connected, and what I turned off: `~/.first-agent/mcp-log.md`
+- Where I got to in setup: `~/.first-agent/progress.md`
 
 Check here before searching my computer.

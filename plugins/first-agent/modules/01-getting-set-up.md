@@ -63,9 +63,9 @@ One sentence on why: everything agent-related lives in one place, so they always
 
 Then flag what's coming:
 
-> One thing for later — passwords and keys go somewhere dedicated and secure, which we set up in module 6. Don't paste any into this chat before then.
+> One thing for later — passwords and keys go somewhere dedicated and secure, which we set up in module 7. Don't paste any into this chat before then.
 
-## Do: build their profile
+## Do: learn what they work on
 
 Interview them conversationally — ask, listen, follow up. Cover:
 
@@ -74,17 +74,19 @@ Interview them conversationally — ask, listen, follow up. Cover:
 - One thing they do repeatedly that they'd rather not
 - Anything on their computer or in their accounts you should leave alone
 
-The last question matters most. Ask it directly and record the answer in their own words. If they say "nothing, this machine is new," record that as given — and note that accounts aren't new even when a machine is, which module 8 will come back to.
+The last question matters most. Ask it directly and keep the answer in their own words. If they say "nothing, this machine is new," take that as given — and note that accounts aren't new even when a machine is, which module 9 will come back to.
 
-Write the answers to `~/.first-agent/PROFILE.md` using the template at `templates/PROFILE.md`, including which interface they're using. Show them the finished file and invite corrections.
+**Don't write this to a file yet.** Hold it in the conversation. In module 3 they get a standing-rules file that every future session reads, and this is what goes at the top of it — written in their words, by them, in a file they own. A profile stashed in a folder nothing reads is worse than no profile; a few lines in the file that loads at the start of every session is the thing that actually works.
 
-Tell them what it's for: future sessions can read it, so they aren't re-explaining their work every time.
+Say that much now, so the interview doesn't feel like it went nowhere:
+
+> I'm keeping this in mind for now. In two modules you get a file that every session on this machine reads before it does anything — that's where this belongs, and you'll write it there yourself.
 
 ## Do: show them what they can already do
 
 Before installing anything, take two minutes on what's available in the tools they just named. They may have connectors already — email, Drive, Slack, a calendar — and if so, that's real capability sitting there unused. List what you can actually see and give one concrete example against something of theirs.
 
-Keep it short. This is a preview, not module 8. The point is that useful work doesn't wait for the end of the walkthrough.
+Keep it short. This is a preview, not module 9. The point is that useful work doesn't wait for the end of the walkthrough.
 
 ## Checkpoint
 
