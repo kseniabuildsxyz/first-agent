@@ -49,3 +49,9 @@ macOS. Claude on a paid plan.
 **No GitHub account needed.** This is a public repository — installing from it downloads a copy, the same way any public file downloads. You don't need to sign up for anything, and nothing here will ask you to.
 
 Windows and Linux aren't supported.
+
+## License
+
+Copyright 2026 Ksenia Pylypiuk. Licensed under [CC BY-SA 4.0](LICENSE).
+
+Use it, change it, share it, and credit me. If you build on it and pass it on, license yours the same way so the next person gets what you got.
