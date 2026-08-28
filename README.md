@@ -10,7 +10,7 @@ About two hours to set your machine up, plus an optional build at the end that t
 
 You don't need to install anything first.
 
-1. Download Claude from [claude.com/download](https://claude.com/download), install it, and sign in. A paid plan is required.
+1. Download Claude from [claude.com/download](https://claude.com/download) if you don't have it yet, install it, and sign in. A paid plan is required.
 2. **On your Desktop, make a new empty folder** called `agent`. Starting somewhere empty means the agent begins with nothing of yours in reach.
 3. Open Claude and click the **Code** tab at the top of the window.
 4. Choose **Local**, click **Select folder**, and pick the `agent` folder you just made.
