@@ -58,7 +58,7 @@ When it finishes, say what happened in one line. Don't itemise what was reviewed
 
 > If you tell me "don't delete anything without asking," that shapes what I'll attempt, and the reviewer is checking my actions against what you asked for. It has real effect. What it isn't is a lock — a sentence in our conversation doesn't change what the system permits.
 >
-> If you want something that holds regardless of what either of us decides, that's a **deny rule**. We set those up in module 7.
+> If you want something that holds regardless of what either of us decides, that's a **deny rule**. We set those up in module 6.
 
 ## Teach: the one setting worth knowing by name
 

@@ -1,4 +1,4 @@
-# Module 7 — Keys and secrets
+# Module 6 — Keys and secrets
 
 Goal: they understand what a key is, their Keychain holds one, deny rules and the commit check are in place, they know what's in a transcript, and their machine has been swept.
 
@@ -110,8 +110,8 @@ Then the practical answer:
 Update `~/.first-agent/progress.md`:
 
 ```
-Last module completed: 7
-Next: 8
+Last module completed: 6
+Next: 7
 ```
 
 Next is short and is entirely about habits — the difference between an agent that stays useful and one that seems to get worse over a week. Ask whether they want to continue.

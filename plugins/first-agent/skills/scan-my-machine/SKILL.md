@@ -1,5 +1,5 @@
 ---
-description: Scan the usual places on a Mac for exposed API keys, credential files, and tokens, then walk each finding with the user. Use when someone asks whether they have credentials sitting somewhere unsafe, or during onboarding module 7.
+description: Scan the usual places on a Mac for exposed API keys, credential files, and tokens, then walk each finding with the user. Use when someone asks whether they have credentials sitting somewhere unsafe, or during onboarding module 6.
 ---
 
 # Scan for exposed credentials
