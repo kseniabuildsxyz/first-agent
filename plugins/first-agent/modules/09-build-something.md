@@ -1,4 +1,4 @@
-# Module 10 — Build something you want (optional)
+# Module 9 — Build something you want (optional)
 
 Goal: they've built one thing they actually wanted, they know how to write a spec another agent can follow, and they know how to check whether it was followed.
 
@@ -47,7 +47,7 @@ If it turns out something isn't reachable, say so immediately and offer the choi
 
 > This needs access to X, which isn't connected. Two options: I set that up first, which is about twenty minutes, or we pick a version of this that works with what you already have. Either is fine.
 
-Where a service has no built-in connector, that's module 9's territory — an official MCP server if one exists. If they use something like Zapier already, that's often the shortest path and worth naming. None of this is required today, and it's better to build something smaller that works than to spend the hour on plumbing.
+Where a service has no built-in connector, that's module 8's territory — an official MCP server if one exists. If they use something like Zapier already, that's often the shortest path and worth naming. None of this is required today, and it's better to build something smaller that works than to spend the hour on plumbing.
 
 ## Teach: how to write a spec
 

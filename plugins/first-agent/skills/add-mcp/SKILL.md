@@ -44,15 +44,19 @@ So the question is never "is this safe?" but "does this need to write?" If readi
 
 Assume the default configuration is broader than needed. Establish which actions the task actually requires, then reduce to those. Cheapest first.
 
-**Establish which interface they're in before running anything.** The `claude mcp` commands below are the terminal route and need the Claude Code CLI installed — someone using only the desktop app won't have it, and shouldn't be sent to install it for this. In the desktop app, add and edit servers through **Settings → Connectors**, or write the definition into the user-scope `mcpServers` block in `~/.claude.json` directly. Say which route you're taking and why.
+**In the app, this is a click-through.** Open **Customize → Connectors**: **Discover** browses the directory, **Add** takes one of your own. If they can't find Customize, it's also reachable from the account menu at the bottom left → **Settings**, then **Customize** at the foot of the settings list.
 
-**The interface, when there is one.** For a connector managed in account settings, the actions can be switched off by hand under Settings → Connectors. Prefer this over a config file when it's available — the user can see it, change it, and undo it without help.
+Don't send them to **Settings → Desktop app → Extensions**. That panel installs `.mcpb` extensions for the Chat app and the Code tab doesn't see them.
+
+The `claude mcp` commands below are the terminal equivalent and need the Claude Code CLI, which someone using only the app won't have. Prefer the interface.
+
+**The interface, when there is one.** For a connector managed in account settings, the actions can be switched off by hand under Customize → Connectors. Prefer this over a config file when it's available — the user can see it, change it, and undo it without help.
 
 **A setting the server already provides.** Many offer a read-only mode or a tool allowlist through an environment variable. Check the source for one before doing more work.
 
 ```bash
-# terminal (needs the CLI); in the desktop app set the same variable
-# in the server's entry under Settings → Connectors or in ~/.claude.json
+# terminal (needs the CLI); in the app, set the same variable
+# on the server's entry under Customize → Connectors
 claude mcp add <name> -s user -e SERVER_READ_ONLY=true -- <command>
 ```
 
@@ -69,7 +73,7 @@ git clone <repo> ~/Desktop/agent/projects/<name>
 # remove unwanted tool registrations, then register the local copy:
 # terminal —
 claude mcp add <name> -s user -- /absolute/path/to/server
-# desktop app — point the server's entry at the absolute path instead
+# in the app — Customize → Connectors → Add, pointed at the absolute path
 ```
 
 For a first install of anything, narrow to read-only. Writes get enabled later, deliberately, for a named purpose.
@@ -84,9 +88,14 @@ Report the final action list to the user. They should end knowing exactly what w
 
 ## Record it
 
-Append to `~/.first-agent/mcp-log.md`: the server, version or commit installed, what it was narrowed to, what was deliberately left alone, and the date.
+Append to `~/.first-agent/mcp-log.md`: the server, version or commit installed, **what it is for and when to reach for it**, what it was narrowed to, what was deliberately left alone, and the date.
 
-Explain what the file is for rather than just writing it. These change under you — an update can add tools and ask for broader access than the version you checked. The log is what makes "what's new here?" a five-minute comparison instead of a fresh audit. Their own copy of a server only changes when they change it.
+This file is a register agents read before starting work, not an archive. Two jobs:
+
+- **What changed.** An update can add tools and ask for broader access than the version you checked. Without a record there's nothing to compare against.
+- **What exists.** An agent that doesn't know a purpose-built server is installed will reach for a general-purpose tool, fail slowly, and report the task as impossible. Writing down what each server is *for* is what prevents that, so favour a plain sentence about the job it does over a list of tool names.
+
+Note anything the user has decided **not** to use, and why, in the same file.
 
 ## Enumerating what's already there
 

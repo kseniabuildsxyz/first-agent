@@ -32,8 +32,8 @@ Add `jq` to that line only if the check above came back empty.
 One line each on what they're for:
 
 - **git** — keeps a history of your files so you can go back. Next module.
-- **gitleaks** — checks for passwords and keys before they get committed. Module 7.
-- **jq** — reads structured data. The key check in module 7 uses it.
+- **gitleaks** — checks for passwords and keys before they get committed. Module 6.
+- **jq** — reads structured data. The key check in module 6 uses it.
 
 Confirm each with `--version`. If `git --version` reports an older number than Homebrew installed, macOS's own copy is being found first. Harmless, and worth one sentence so it isn't mysterious later.
 
@@ -53,14 +53,17 @@ Do not send them to create an account. Do not install or run `gh`.
 
 ## Do: install this walkthrough as a plugin
 
-**In the desktop app**, plugins install through Settings — there's no slash command for it. Walk them through it:
+**In the desktop app**, plugins install through the interface — there's no slash command for it. Walk them through it:
 
-1. Click their name at the **bottom left** of the sidebar.
-2. **Settings**, or **⌘,**.
-3. In the left rail, under **Customize**, click **Plugins**.
-4. Top right, **Add ▾** → **Add marketplace**.
-5. In the **URL** field, type `kseniabuildsxyz/first-agent`. The shorthand is enough — no full address needed.
-6. **Sync**, then install **first-agent** from the list.
+1. Click **Customize** in the sidebar.
+2. Click **Plugins**.
+3. Top right, **Add ▾** → **Add marketplace**.
+4. In the **URL** field, type `kseniabuildsxyz/first-agent`. The shorthand is enough — no full address needed.
+5. **Sync**, then install **first-agent** from the list.
+
+If they can't find **Customize** in the sidebar, it's also at the account menu at the **bottom left** → **Settings** (or **⌘,**) → **Customize**, at the foot of the list. Same panel either way.
+
+Point out while they're there that **Customize** also holds **Skills** and **Connectors**. Connectors is module 8, and knowing where it lives now saves finding it later.
 
 **In a terminal**, it's two slash commands typed into the chat rather than the terminal:
 
@@ -79,7 +82,7 @@ That's the same judgement as module 4's, one level up. There it was a command fr
 
 ## If it doesn't install
 
-Say so and carry on — the module files can be read directly and nothing downstream depends on the plugin. What they'd lose is `/first-agent:start` for resuming, the two helper commands module 7 actually runs, and `/first-agent:add-mcp` for later. Note it in their progress file so it's written down.
+Say so and carry on — the module files can be read directly and nothing downstream depends on the plugin. What they'd lose is `/first-agent:start` for resuming, the two helper commands module 6 actually runs, and `/first-agent:add-mcp` for later. Note it in their progress file so it's written down.
 
 From here, read module files from the local `modules/` directory rather than over HTTPS.
 

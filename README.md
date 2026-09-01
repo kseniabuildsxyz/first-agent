@@ -4,7 +4,7 @@ A guided setup that turns a new Mac into one you can build on with an AI agent â
 
 **macOS only.** Parts of this rely on Homebrew and the macOS Keychain. **Built for Claude**, in the desktop app or the terminal.
 
-About two hours to set your machine up, plus an optional build at the end that takes another half hour to an hour. It's designed to be stopped and picked up later, so you don't need a free afternoon. You won't write any code.
+About an hour and three quarters to set your machine up, plus an optional build at the end that takes another half hour to an hour. It's designed to be stopped and picked up later, so you don't need a free afternoon. You won't write any code.
 
 ## Start here
 

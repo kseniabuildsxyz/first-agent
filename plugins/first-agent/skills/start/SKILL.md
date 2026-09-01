@@ -12,7 +12,7 @@ Then:
 2. If it doesn't exist, this is a fresh start — create it and begin at module 1.
 3. If it does exist, they're returning. Tell them which module is next and resume there. Don't start over and don't re-teach what they've done.
 
-Ten modules. Modules 1–9 set the machine up; module 10 is an optional build. If their progress file shows module 9 complete, their setup is finished — say so, and offer module 10 as a choice rather than a remaining step.
+Nine modules. Modules 1–8 set the machine up; module 9 is an optional build. If their progress file shows module 8 complete, their setup is finished — say so, and offer module 9 as a choice rather than a remaining step.
 
 Read module files from `../../modules/` in this plugin.
 

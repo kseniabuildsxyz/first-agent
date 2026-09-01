@@ -61,9 +61,17 @@ scratch/     experiments and throwaways
 
 One sentence on why: everything agent-related lives in one place, so they always know where to start a session and what each folder is for.
 
+Then turn on version history for the folder — `git init`, a `.gitignore` holding `.DS_Store`, and a first commit. **You do this; they don't type anything and there is nothing to learn here.** One sentence is enough:
+
+> I've turned on version history for this folder, so I can save a restore point before I change anything substantial and put things back if a change goes wrong. You won't have to think about it.
+
+If git doesn't know who they are, ask for a name and email rather than assuming, and mention these get stamped on saved versions and are visible if a folder ever goes to a shared host — some people use a personal address for that reason.
+
+Two later things depend on this existing: the checkpoint rule in their standing rules, and the key check in module 6. Don't skip it.
+
 Then flag what's coming:
 
-> One thing for later — passwords and keys go somewhere dedicated and secure, which we set up in module 7. Don't paste any into this chat before then.
+> One thing for later — passwords and keys go somewhere dedicated and secure, which we set up in module 6. Don't paste any into this chat before then.
 
 ## Do: learn what they work on
 
@@ -74,7 +82,7 @@ Interview them conversationally — ask, listen, follow up. Cover:
 - One thing they do repeatedly that they'd rather not
 - Anything on their computer or in their accounts you should leave alone
 
-The last question matters most. Ask it directly and keep the answer in their own words. If they say "nothing, this machine is new," take that as given — and note that accounts aren't new even when a machine is, which module 9 will come back to.
+The last question matters most. Ask it directly and keep the answer in their own words. If they say "nothing, this machine is new," take that as given — and note that accounts aren't new even when a machine is, which module 8 will come back to.
 
 **Don't write this to a file yet.** Hold it in the conversation. In module 3 they get a standing-rules file that every future session reads, and this is what goes at the top of it — written in their words, by them, in a file they own. A profile stashed in a folder nothing reads is worse than no profile; a few lines in the file that loads at the start of every session is the thing that actually works.
 
@@ -86,7 +94,7 @@ Say that much now, so the interview doesn't feel like it went nowhere:
 
 Before installing anything, take two minutes on what's available in the tools they just named. They may have connectors already — email, Drive, Slack, a calendar — and if so, that's real capability sitting there unused. List what you can actually see and give one concrete example against something of theirs.
 
-Keep it short. This is a preview, not module 9. The point is that useful work doesn't wait for the end of the walkthrough.
+Keep it short. This is a preview, not module 8. The point is that useful work doesn't wait for the end of the walkthrough.
 
 ## Checkpoint
 

@@ -1,6 +1,6 @@
-# Module 8 — Working habits
+# Module 7 — Working habits
 
-Goal: they know why a session degrades and what to do about it, they can start over deliberately rather than as a last resort, they know what this costs, and they ask for evidence.
+Goal: they know why a session degrades and what to do about it, they can start over deliberately rather than as a last resort, they know what this costs, and they know how to make the agent delegate its heavy work.
 
 Time: about 10 minutes.
 
@@ -38,9 +38,13 @@ Four, in order of how much they help. Add each one to `~/.claude/CLAUDE.md` as y
 
 **Plan first for anything big.** Ask for the plan before the work when a task touches more than a couple of files. Much cheaper to redirect a plan than a result.
 
-**Ask for evidence, not assurance.** The one that matters most:
+**Make me the orchestrator, not the labourer.** The one that changes how the whole thing feels. Its own section below.
 
-> I can tell you something worked when it didn't. Not deliberately — I lose track, or I assume a step succeeded because I intended it to. When it matters, ask to see the actual thing: the file, the output, the number. "Show me" costs five seconds.
+## Teach: why I stop on a data gap
+
+One of the rules they installed in module 3, and the one they'll meet first in practice, so it's worth a line before it happens.
+
+> If something is missing, unreachable, or smaller than I expected, I stop rather than working with what's there. A partial answer that looks complete is worse than no answer — nothing on screen tells you which half is missing.
 
 ## Teach: starting over is a normal move, not a failure
 
@@ -69,17 +73,31 @@ Plain terms, no arithmetic:
 
 If they're on a subscription, tell them where usage shows up so a limit isn't a surprise.
 
-## Do: practise asking for evidence
+## Teach: ask me to orchestrate, not to do everything myself
 
-Do this rather than describe it, and pick something where the answer is genuinely ambiguous — the lesson is not that numbers get invented, it's that a correct answer can be to a slightly different question than the one they asked.
+This is the technique that separates a session that stays sharp from one that grinds, and almost nobody is told about it.
 
-Something with a hidden judgement call in it works best. Count something in their folder where you have to decide what counts, answer with the number alone, then have them ask you to prove it. When you show the working, show the decision you made silently — what you included, what you excluded, and that they'd have had no way to know.
+> When a job needs a lot of fetching — querying a dataset, reading twenty rows out of a spreadsheet, reconciling two sources, trawling a folder — I can either do it here in front of you, or hand it to a **subagent**: a separate worker I start, brief, and wait on. It does the grinding somewhere else and comes back with the answer.
 
-> That's the real shape of it. Not me inventing a number — me giving you a correct number to a question slightly different from the one you asked. Asking to see the working is how you catch it, and it took you two words.
+Why it matters, in terms they feel rather than terms about tokens:
 
-Then say the harder version out loud, because it will happen to them:
+- **This conversation stays short.** Every raw row and half-useful search result I pull in sits in front of me for the rest of the session, competing with what you actually asked. Sending that work elsewhere means only the conclusion comes back.
+- **The session stays sharp for longer.** The degradation from earlier in this module is caused by exactly this kind of bulk. Delegating is the main thing that delays it.
+- **It's usually faster and cheaper.** A subagent can run on a smaller model and several can run at once.
 
-> The worse case is that I tell you something is done when it isn't. I'll say a file is written, or a change is made, and it won't be — because I described the step instead of taking it. Nothing in the conversation looks wrong. The only thing that catches it is asking to see the result, especially before you clear a session or walk away.
+What they'll actually see, so it isn't alarming when it happens:
+
+> You'll see me say I'm handing something off, then a pause while it works, then a summary. You won't see the twenty rows. That's the point — but it does mean if you want the underlying detail, ask for it, because I won't have pasted it here.
+
+Then the phrasing to give them, which is the takeaway:
+
+> **"Delegate the heavy lifting and just bring me the answer."** Or by name: "send the data pull to a subagent." Say it once at the start of a big job and it shapes how I approach the whole thing.
+
+This is already in their standing rules from module 3. Point that out — it's the file working as intended, and a good moment to show that a rule they installed two modules ago is now doing something visible.
+
+Worth one honest caveat:
+
+> A subagent only knows what I tell it. If I brief it badly it comes back with a confident, wrong answer, and I have less to check it against than if I'd done the work here. So it's right for fetching and grinding, and wrong for the judgement call at the end.
 
 ## Teach: when a run goes wrong
 
@@ -88,8 +106,7 @@ The ladder, in order. Most things resolve at the first or second rung.
 1. **Read the actual error.** Ask to see it rather than a summary. Errors usually name the problem.
 2. **Ask what just happened.** A plain account of the last few actions often locates it immediately.
 3. **Ask for a write-up, then start a fresh session** with it.
-4. **Go back to the last saved version** — `git restore .` from module 6.
-5. **Say the approach isn't working.** Not every path deserves a fifth attempt.
+4. **Say the approach isn't working.** Not every path deserves a fourth attempt.
 
 And plainly: saying *"this isn't working, what are my options"* is a good move, not a defeat.
 
@@ -98,8 +115,8 @@ And plainly: saying *"this isn't working, what are my options"* is a good move, 
 Update `~/.first-agent/progress.md`:
 
 ```
-Last module completed: 8
-Next: 9
+Last module completed: 7
+Next: 8
 ```
 
 Next: how to give an agent access to a tool it doesn't have yet — their email, their spreadsheets, their systems. Ask whether they want to continue.

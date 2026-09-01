@@ -74,9 +74,13 @@ Then walk what's in it, one line each, and say where it lives:
 
 This is where module 1's interview lands, and it's the point of having done it.
 
-Write what they told you into the `## About my work` section at the top of the file — what they do, where their work lives, the repetitive thing worth building for, and what's off limits. Compose it in front of them, in their words rather than yours, and read it back.
+The file ships with placeholders in double braces at the top — `{{PRINCIPAL}}`, `{{PRINCIPAL_ROLE}}`, `{{COMPANY}}`, `{{PRINCIPAL_EMAIL}}`, `{{WHAT_I_DO}}`. **Replace every one of them, braces included.** A file still saying `{{PRINCIPAL}}` is a file nobody finished.
 
-The off-limits answer becomes a rule, not a description. "Don't touch anything in my Finance folder" belongs in the rules above, phrased as an instruction. Move it there and say you're doing it.
+Name, role, and company come from module 1. For `{{WHAT_I_DO}}`, write two or three sentences in their words: what their work actually is, where it lives, and the repetitive thing worth building for. A job title alone doesn't tell an agent anything — plenty of titles mean different work at different companies.
+
+Compose it in front of them and read it back.
+
+The off-limits answer becomes a rule, not a description. "Don't touch anything in my Finance folder" belongs in the Universal Rules, phrased as an instruction. Put it there and say you're doing it.
 
 Then name what just happened, because it's the habit the whole file exists to teach:
 

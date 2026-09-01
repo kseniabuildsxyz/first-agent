@@ -1,4 +1,4 @@
-# Module 9 — Tools and connectors
+# Module 8 — Tools and connectors
 
 Goal: they know what they already have connected, they understand the three places extra capability comes from, and they've narrowed at least one thing themselves.
 
@@ -18,7 +18,9 @@ Two lines: this is about reaching their actual tools — email, documents, whate
 >
 > The ones built into your Claude account are the easiest kind. They're maintained by the company that runs the service, they're switched on in your account settings, and there's nothing to install or vet. They also follow your account — set one up here and it's there in the terminal version too, on the same login.
 
-They're managed under **Settings → Connectors**, in the same place as Plugins from module 5.
+They're managed under **Customize → Connectors** — **Discover** to browse the directory, **Add** for one of your own. Customize also holds Skills and Plugins, so it's the same place they installed this walkthrough in module 5. If they can't find it, it's reachable from the account menu at the bottom left → **Settings**, then **Customize** at the foot of the list.
+
+One thing not to confuse it with: **Settings → Desktop app → Extensions** is a different panel that installs extensions for the Chat app. The Code tab doesn't see those.
 
 ## Do: show them what they already have
 
@@ -62,7 +64,7 @@ Use a real example, since it makes the principle concrete:
 
 Have them do this themselves, in the settings UI, on a connector they actually have.
 
-This matters more than it looks. A deny rule buried in a JSON file teaches them nothing they'll reuse — they'll never open that file again. Clicking a permission off in **Settings → Connectors** teaches them that the environment is theirs to configure, which is the thing they'll actually carry forward.
+This matters more than it looks. A deny rule buried in a JSON file teaches them nothing they'll reuse — they'll never open that file again. Clicking a permission off in **Customize → Connectors** teaches them that the environment is theirs to configure, which is the thing they'll actually carry forward.
 
 Walk them to it, let them read the list of actions, and have them turn off something that shouldn't be automatic — anything that sends, deletes, or pays. Have them look at what's left.
 
@@ -78,9 +80,13 @@ Point back to module 5:
 
 ## Do: write down what's connected
 
-Record it in `~/.first-agent/mcp-log.md` and tell them what the file is for, because it gets written and never explained:
+Record it in `~/.first-agent/mcp-log.md` and tell them what the file is for, because it gets written and never explained. It does two jobs, and the second is the one people don't expect:
 
-> This is a list of what's connected, what it can do, and what we turned off — with today's date on it. The reason it exists is that these change. An update can add actions and ask for broader access than the version you looked at, and without a record there's nothing to compare against. When something updates, this is what makes "what's new here?" a five-minute question instead of a fresh audit.
+> This is a register of everything on your machine I can reach that isn't in the connector list — what each one is for, and what we turned off. Your standing rules tell me to read it before I start work.
+>
+> Two things it does. It tells you what changed: an update can add actions and ask for broader access than the version you looked at, and without a record there's nothing to compare against. And it tells me what exists — otherwise I reach for a general-purpose tool, fail slowly, and report a task as impossible when the right server was installed all along.
+
+Note anything **not** to use here too, and why.
 
 Note anything left undone and why. If a connector still has change-capable actions you didn't touch because you don't know which ones they use, say that and log it as outstanding rather than guessing.
 
@@ -89,12 +95,12 @@ Note anything left undone and why. If a connector still has change-capable actio
 Update `~/.first-agent/progress.md`:
 
 ```
-Last module completed: 9
-Next: 10 (optional)
+Last module completed: 8
+Next: 9 (optional)
 ```
 
 Then be clear about where they've got to:
 
 > That's the setup finished. Your machine is configured, your keys have somewhere to live, your work folder has a history, and you know what I can reach and how to change it. Nothing is outstanding.
 
-Module 10 is optional and it's a build of their own choosing. Describe it in two lines and let them decide whether they want it now, later, or not at all. Stopping here is a complete outcome, not an abandonment.
+Module 9 is optional and it's a build of their own choosing. Describe it in two lines and let them decide whether they want it now, later, or not at all. Stopping here is a complete outcome, not an abandonment.
