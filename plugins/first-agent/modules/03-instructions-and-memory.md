@@ -32,7 +32,7 @@ Lay out all five, because they're about to change one and the rest come up later
 
 > Everything an agent does is shaped by instructions, and those arrive from five different places. All five are worth reviewing so you know how to control them.
 >
-> **Your standing rules**, at `~/.claude/CLAUDE.md`. You write these (or explicitly ask me to write and update them). They apply to every session on this machine, in every folder. These are good for enforcing rules and habits applicable across any context - how you like your agents to work with you or sharing what they should know about you to be most helpful. 
+> **Your standing rules**, at `~/.claude/CLAUDE.md`. You write these (or explicitly ask me to write and update them). They apply to every session on this machine, in every folder. These are good for enforcing rules and habits applicable across any context - how you like your agents to work with you or sharing what they should know about you to be most helpful.
 >
 > **Project rules**, a `CLAUDE.md` file inside a particular folder. Written by you, or by whoever owns that project. They apply when work is happening in that folder, and they stack on top of your standing rules. They do not apply to new sessions outside of that folder.
 >

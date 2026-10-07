@@ -16,7 +16,7 @@ Before starting, re-read START.md — in particular "How to read a module."
 
 > Most online services will let a program act on your behalf: read a spreadsheet, pull an invoice, look something up. To do that, the program has to prove it's acting for you, and an **API key** is how it proves it. An API key is practically a password, just one written for a program to use rather than a person.
 >
-> Your own passwords usually have a second check attached, like a code sent to your phone or a fingerprint. A key usually has nothing behind it, so whoever holds it can do everything it allows, from anywhere, until you go to the service and cancel it or the key refreshes. 
+> Your own passwords usually have a second check attached, like a code sent to your phone or a fingerprint. A key usually has nothing behind it, so whoever holds it can do everything it allows, from anywhere, until you go to the service and cancel it or the key refreshes.
 
 ## Teach: the three ways keys get loose
 
