@@ -4,6 +4,8 @@ Goal: they've built one thing they actually wanted, they know how to write a spe
 
 Time: 30–60 minutes, depending on what they pick.
 
+Before starting, re-read START.md — in particular "How to read a module."
+
 This module is optional and their machine is already finished without it. Offer it as an opportunity, not a remaining obligation.
 
 There is no prescribed subject and no prescribed output. Not a dashboard, not a chart, nothing that has to contain numbers. What they build is theirs to choose, and the whole value is that they'd use it again.
@@ -12,15 +14,15 @@ There is no prescribed subject and no prescribed output. Not a dashboard, not a 
 
 ## Open
 
-Put the choice to them plainly:
+Put the choice to them plainly. If module 8 left anything outstanding, say so here instead of claiming nothing is.
 
-> Your computer is set up and there's nothing left outstanding. There's one optional exercise: I walk you through building, automating, or fixing something you actually want. Not a demo — a real thing.
+> Your computer is set up, and there's nothing outstanding. There's one optional exercise left: I walk you through building, automating or fixing something you actually want, using a real piece of your work instead of a demonstration.
 >
-> Pick something fairly low stakes, so you can experiment and make mistakes with it, but something that genuinely helps you. Half an hour to an hour. Want to do it now, save it for later, or skip it?
+> Pick something fairly low stakes, so you can experiment and make mistakes with it, but something that would genuinely help you. It takes between half an hour and an hour. Would you like to do it now, save it for later, or skip it?
 
 If they'd rather stop, close out with the section at the end and leave it there. Coming back later is a normal outcome.
 
-**Low stakes does not mean pointless.** It means a task where a wrong answer is recoverable and nobody is waiting on it. A throwaway they'll never open again teaches them that this kind of work produces nothing — the opposite of the lesson. Their own work, taken one slice at a time, is the right target.
+**Low stakes does not mean pointless.** It means a task where a wrong answer is recoverable and nobody is waiting on it. A throwaway they'll never open again teaches them that this kind of work produces nothing, which is the opposite of the lesson. Their own work, taken one slice at a time, is the right target.
 
 ## Do: land on the thing
 
@@ -35,37 +37,37 @@ Then scope it, holding four lines:
 
 ## Do: work out what it needs before building anything
 
-This is a real step, not a formality, and it's where most first builds die.
+This is a real step, and it's where first builds most often stall.
 
 Go through it with them out loud:
 
-- **Where does the information come from, and can I reach it today?** Their own folder, a connector they already have, or something not connected yet.
+- **Where does the information come from, and can you reach it today?** Their own folder, a connector they already have, or something not connected yet.
 - **Where does the result go?** A file, a message, a system.
 - **Is there a step in the middle that needs judgement?** If so, that step stays theirs, and the tool's job is to prepare it rather than decide it.
 
 If it turns out something isn't reachable, say so immediately and offer the choice rather than improvising around it:
 
-> This needs access to X, which isn't connected. Two options: I set that up first, which is about twenty minutes, or we pick a version of this that works with what you already have. Either is fine.
+> This needs access to X, which isn't connected yet. There are two ways forward: I can set that up first, which takes about five to fifteen minutes, or we can pick a version of this that works with what you already have. Which one do you prefer?
 
-Where a service has no built-in connector, that's module 8's territory — an official MCP server if one exists. If they use something like Zapier already, that's often the shortest path and worth naming. None of this is required today, and it's better to build something smaller that works than to spend the hour on plumbing.
+Where a service has no built-in connector, that's module 8's territory — an official MCP server if one exists. If they already use something like Zapier, that's often the shortest path and worth naming. None of this is required today, and something smaller that works is better than an hour spent on plumbing.
 
 ## Teach: how to write a spec
 
 This is the transferable skill in the module, and the reason not to hand them a template.
 
-> A spec is a description of a job precise enough that someone with no context can do it. That's the test — not whether it's detailed, but whether it survives being read by someone who wasn't part of the conversation.
-
-What one needs, in this order:
-
-1. **What it's for**, in a sentence. The thing that decides every ambiguous choice later.
-2. **The inputs** — where they come from, what they look like, what's true of them.
-3. **The output** — what gets produced, in what shape, where it goes.
-4. **The rules that can't be broken.** The things that are wrong if violated, even when the result looks fine. This is the part people leave out and it's the part that matters.
-5. **What "done" means.** How anyone would check it worked.
+> A **spec** is a description of a job, written precisely enough that someone with no context could do it. The way to judge one is to ask whether it would still work if it were read by someone who wasn't part of the conversation that produced it. Detail only helps as far as it serves that.
+>
+> A spec needs five things, in this order.
+>
+> 1. **What it's for**, in one sentence, because that sentence is what settles every ambiguous choice later.
+> 2. **The inputs:** where they come from, what they look like, and what's true of them.
+> 3. **The output:** what gets produced, in what shape, and where it goes.
+> 4. **The rules that can't be broken**, meaning the things that make the result wrong even when it looks fine. That's the part most often left out, and it's the part that matters most.
+> 5. **What "done" means**: how anyone would check that it worked.
 
 Write it **with** them, in front of them, into a file in their project folder. Compose it out loud so they see the choices being made, and get them to say the "for" sentence in their own words rather than accepting your version.
 
-If a concrete example helps, write a short one **for what they actually chose**, not a generic one. Six lines is enough to show the shape:
+If a concrete example helps, write a short one **for what they actually chose**, not a generic one. Five lines is enough to show the shape:
 
 ```markdown
 # Weekly supplier check
@@ -81,11 +83,11 @@ Then throw it away and write theirs. The example is there to show that five shor
 
 ## Do: hand it to a fresh session
 
-> A session is one conversation with its own memory. Opening a second one gives you a worker that knows nothing about this conversation — which is exactly what you want, because the spec has to stand on its own.
+> You know from module 3 that a session is one conversation with its own memory. A second session starts with none of this one, which is exactly what you want here, because the spec has to stand on its own.
 >
-> This window stays open. Come back here when it goes sideways.
+> This window stays open while you do it. If things go sideways over there, come back here and tell me what happened.
 
-How: in the desktop app, a new session pointed at the same folder. In the terminal, a new tab, `cd` to the folder, run `claude`. Side by side if their screen allows — watching it happen is most of the learning.
+How: in the desktop app, a new session pointed at the same folder. In a terminal, a new tab, `cd` to the folder, run `claude`. Side by side if their screen allows, because watching it happen is most of the learning.
 
 Give them a short brief to paste, pointing at the spec file by its real path and asking for the plan before the work.
 
@@ -97,28 +99,22 @@ Then stay out of the way. Things to prompt them toward, if they don't do them:
 
 ## Teach: checking whether the spec was actually followed
 
-This is the most useful technique in the walkthrough, and the framing matters — it isn't only for when something breaks.
+The framing matters here: this is for checking instructions, and not only for when something breaks.
 
-> Every session writes down everything that happened in it, and another session can read that record. The obvious use is diagnosis: when a session is stuck, convinced a file exists or going in circles, asking it what went wrong is asking the confused party for a diagnosis. A fresh one reading the transcript has no stake in the story.
+> As we covered in module 3, every session keeps a complete record of what happened in it, called a **transcript**, and another session can read that record. The obvious use is diagnosis. When a session is stuck, convinced a file exists or going in circles, asking it what went wrong means asking the confused party for its own diagnosis, while a fresh session reading the transcript has no stake in the story.
 >
-> The more useful use is checking your own instructions. You wrote a spec. Another agent, with no context, just tried to follow it. The transcript is a record of exactly where your instructions were clear and where they weren't.
-
-The loop, which is the thing to leave them with:
-
-1. Write the spec.
-2. Run it in a fresh session that knows nothing.
-3. Ask that session for its **session ID**.
-4. Bring the ID back here, with the spec, and ask: what did it actually do, where did it diverge from what the spec asked for, and what in the spec caused that?
-5. Fix the spec, not the output.
-
-> That's how anything repeatable gets made reliable — a spec, a skill, a checklist. You don't improve it by rereading it. You improve it by watching someone follow it without you there.
+> The more useful use is checking your own instructions. You've written a spec, and another agent with no context has just tried to follow it. Its transcript records exactly where your instructions were clear and where they weren't.
+>
+> Here's the loop. Write the spec. Run it in a fresh session that knows nothing about this one. Ask that session for its **session ID**. Bring the ID back here along with the spec, and ask what the other session actually did, where it departed from the spec, and what in the spec caused that. Then fix the spec, rather than the output.
+>
+> That's how anything you want to repeat becomes reliable, whether it's a spec, a skill or a checklist. Rereading it yourself won't show you where it's unclear, because you already know what you meant. Watching someone else follow it without you there will.
 
 Two practical notes:
 
-- Tell the second session to **search the transcript for the relevant parts** rather than read all of it. A busy transcript is megabytes and reading it whole spends the context needed for the answer.
-- Transcripts can be read but **not written to**, in any mode. A session can't alter its own record, which is why a second opinion drawn from it is worth having.
+- Tell the second session to **search the transcript for the relevant parts** rather than read all of it. A busy transcript is megabytes, and reading it whole spends the context needed for the answer.
+- A session's transcript is a record of what happened, written as it happens, so what a second session reads is what the first one did rather than its account of it. That's what makes the second opinion worth having.
 
-Have them do it once, on this build. Whatever happened is subject enough — a wrong turn, a misread instruction, even just a step that took longer than expected. The point is that they've done it once, so it's available when they need it.
+Have them do it once, on this build. Whatever happened is subject enough — a wrong turn, a misread instruction, even a step that took longer than expected. The point is that they've done it once, so it's available when they need it.
 
 ## Do: keep it
 
@@ -128,17 +124,21 @@ Commit it. Then write a short `README.md` next to it: what it does, how to run i
 
 Say this without softening it:
 
-> This works now. It will break eventually, and knowing why in advance makes it a ten-minute fix rather than a dead end.
+> This works now. At some point it will stop working, and knowing the likely reasons in advance turns that into a ten-minute fix instead of a dead end.
+>
+> There are three usual causes. The source moves: a column gets renamed, a tab gets added, or a report changes shape, and it goes looking for something that isn't there any more. Access lapses: a key gets rotated or a permission is revoked, and it stops with an authentication error. Or what you want from it changes, which is the most common of the three.
+>
+> None of that requires you to become an engineer. It requires noticing when the output looks wrong, and bringing the actual error to a session instead of quietly going back to doing it by hand. Whoever built something maintains it, and here that's you, which is the trade for not having to wait for someone else to build it.
 
-Three causes, with what changes:
+## Holding the objective
 
-- **The source moves.** A column gets renamed, a tab gets added, a report changes shape. It reads something that isn't there any more.
-- **Access lapses.** A key gets rotated or a permission revoked. It stops with an authentication error.
-- **What they want changes.** The most common one by far.
+What they should be able to do afterwards: write a spec another session can follow, and use a transcript to find where it wasn't followed.
 
-Then the part that matters:
+If they push further, these are true and worth having ready:
 
-> None of that requires you to have become an engineer. It requires you to notice when the output looks wrong, and to bring the actual error to a session instead of quietly going back to doing it by hand. Whoever built it maintains it, and that's now you — which is the trade for not having to wait on someone else to build it.
+- **"How is a spec different from a prompt?"** A prompt is a message inside one conversation. A spec is a file that stands on its own and can be handed to any session, any number of times.
+- **"When should this become a skill?"** When they find themselves handing the same spec to fresh sessions again and again. A skill is a packaged set of instructions that loads when it's relevant, and a good spec is most of what one contains.
+- **"Can I schedule this to run by itself?"** It's possible, but not before it has been run by hand often enough to trust the output. Reading before writing matters even more for anything unattended.
 
 ## Close out
 

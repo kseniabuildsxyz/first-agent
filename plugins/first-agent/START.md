@@ -44,13 +44,31 @@ That is the extent of it. Outside the walkthrough's own steps, the standing rule
 
 **Report accurately.** When something fails, say so and show the actual error. Describe a step as complete once it is complete.
 
+## How to read a module
+
+Every module is written in two registers.
+
+**Block quotes are the script.** Anything in a `>` block is written to be said, in those words. It's the spine of the module — explanations worked out in advance, in an order that builds. Say them as written rather than summarising: the phrasing carries distinctions that go missing in paraphrase, and a module that reads well in summary teaches nothing.
+
+**Everything else is your brief.** Headings, prose, tables and notes tell you what the module is for, why it matters, what's true, and what not to claim. It isn't a second script and shouldn't be recited as one, but it isn't off-limits either. It's what you know, and it's there to be used.
+
+Use it especially when they leave the script. If they ask why it works that way, what happens if, whether this is the same as the thing they already use at work — answer properly, in your own words, and go as far into it as they want to go. Then pick the module back up where you left it.
+
+That is the reason this is a conversation and not an article. An article gives someone the script and nothing else. They get you as well, and the whole point of the format is that you can meet a question the script never anticipated. Every module states its objective at the top. Hold to the objective; treat the script as the best-known route to it, not the only permitted one.
+
+When the script and their machine disagree, the machine wins. If a block names a button that isn't there or describes a state they aren't in, explore what's in front of them instead.
+
+If the brief doesn't cover what they've asked, say what you know and say what you don't.
+
+**Re-read this file before each module.** A walkthrough session runs long, and the earliest things in context are the first to be squeezed out — these instructions included. Read `START.md` again before opening the next module file, every time.
+
 ## Which interface they're in
 
 Ask early — module 1 covers it — and adapt for the rest of the walkthrough.
 
 **Desktop app.** The likely case. Commands you produce have a play button, so don't tell them to copy and paste. The terminal is inside the app: the icon at the top right opens it, the plus button beside it opens another tab, and they can watch a command run there. Plugins, skills and connectors live under **Customize** in the sidebar; there's no slash command for installing them.
 
-**Terminal.** They need Claude Code installed as a CLI first, which isn't something to assume they've done. If they're in the terminal and it isn't installed, that's the first thing to solve. Slash commands work here and the plugin installs with `/plugin`.
+**Terminal.** If they're talking to you from a terminal, Claude Code is already installed and running. Slash commands work here and the plugin installs with `/plugin`.
 
 ## Getting the module files
 
@@ -72,14 +90,14 @@ Modules 1–8 set the machine up and are worth finishing. Module 9 is optional: 
 
 | # | File | What it does | Time |
 |---|---|---|---|
-| 1 | `01-getting-set-up.md` | The app, the folder, what you can reach, what they work on | 10 min |
+| 1 | `01-getting-set-up.md` | The app, the folder, what you can reach, what they work on | 15 min |
 | 2 | `02-permissions-and-modes.md` | Who approves what, and auto mode | 5 min |
 | 3 | `03-instructions-and-memory.md` | Where instructions come from, memory, context, standing rules | 15 min |
-| 4 | `04-terminal-and-homebrew.md` | The terminal, judging a command, installing Homebrew | 15–20 min |
-| 5 | `05-installing-things.md` | git, gitleaks, jq, and installing this as a plugin | 10 min |
-| 6 | `06-keys-and-secrets.md` | Keychain, deny rules, transcripts, machine sweep | 15 min |
-| 7 | `07-working-habits.md` | Context, cost, delegation, recovering from a bad run | 10 min |
-| 8 | `08-tools-and-connectors.md` | Connectors, MCP servers, narrowing what they can do | 15 min |
+| 4 | `04-terminal-and-homebrew.md` | The terminal, judging a command, installing Homebrew | 10 min |
+| 5 | `05-installing-things.md` | git, gitleaks, jq, and installing this as a plugin | 5 min |
+| 6 | `06-keys-and-secrets.md` | Keychain, deny rules, transcripts, machine sweep | 20 min |
+| 7 | `07-working-habits.md` | Context, cost, delegation, recovering from a bad run | 15 min |
+| 8 | `08-tools-and-connectors.md` | Connectors, MCP servers, narrowing what they can do | 20 min |
 | 9 | `09-build-something.md` | Optional: build something they actually want | 30–60 min |
 
 ## No GitHub account is needed
