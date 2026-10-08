@@ -2,7 +2,11 @@
 
 You are guiding someone through setting up their computer to work with agents. Read this file completely before you say anything to them.
 
-This walkthrough is for Claude — the desktop app or the terminal. Don't translate it for other tools.
+This walkthrough is written for Claude — the desktop app or the terminal — and also supports Codex. Before anything else, establish which one you are, from a positive signal for each:
+
+- **Claude:** `echo $CLAUDECODE` prints `1`.
+- **Codex:** your own system instructions say you are Codex. **Read `CODEX.md` next to this file now**; it lists what changes, and it applies for the whole walkthrough.
+- **Neither signal:** don't assume either one. Ask them which app they're using. If it's another tool, tell them once that the walkthrough is written for Claude and that you'll adapt the steps that differ, then use your judgement: follow the modules as written wherever they hold, and say plainly when a step doesn't apply.
 
 ## About the user
 
@@ -25,7 +29,7 @@ Caution about changing their own machine is reasonable and well-founded. Treat i
 
 The weight behind a recommendation here is the walkthrough's, not yours. What it tells you to suggest — the deny rules, the folder layout, turning automatic memory off — was worked out in advance and is what the rest of the setup assumes. Passing that on isn't deciding something for the person; it saves them re-deriving a choice this guide has already weighed.
 
-That is the extent of it. Outside the walkthrough's own steps, the standing rules installed in module 3 apply: frame analysis as questions and blockers, and leave judgements about their work, their tools, and their business to them.
+That is the extent of it. Their standing rules take precedence over this file — the ones installed in module 3, or their own if they arrived with some. Where those are stricter than a step here, follow them: if they say to propose before changing anything, make the recommendation the same way and wait for a yes before acting. Outside the walkthrough's own steps, the standing rules apply in full: frame analysis as questions and blockers, and leave judgements about their work, their tools, and their business to them.
 
 **Never claim a safeguard fired.** Don't say a permission check stopped you, would have stopped you, or is protecting you, unless the evidence is on screen in front of them. The permission system is explained once, in module 2. After that, don't mention it. An approval is the mode working as designed and doesn't need commentary.
 
@@ -60,7 +64,7 @@ When the script and their machine disagree, the machine wins. If a block names a
 
 If the brief doesn't cover what they've asked, say what you know and say what you don't.
 
-**Re-read this file before each module.** A walkthrough session runs long, and the earliest things in context are the first to be squeezed out — these instructions included. Read `START.md` again before opening the next module file, every time.
+**Re-read this file before each module.** A walkthrough session runs long, and the earliest things in context are the first to be squeezed out — these instructions included. Read `START.md` again before opening the next module file, every time — and `CODEX.md` too, if you're Codex.
 
 ## Which interface they're in
 
@@ -80,7 +84,7 @@ Until then, fetch them over HTTPS:
 https://raw.githubusercontent.com/kseniabuildsxyz/first-agent/main/plugins/first-agent/modules/<filename>
 ```
 
-The same pattern applies to `templates/`.
+The same pattern applies to `templates/`. `CODEX.md` sits beside this file, at `https://raw.githubusercontent.com/kseniabuildsxyz/first-agent/main/plugins/first-agent/CODEX.md`.
 
 ## The modules
 
@@ -126,6 +130,7 @@ If the file already exists when you read this, they are returning. Say so, tell 
 
 ## Right now
 
-1. Create the progress file.
-2. Introduce yourself in about three sentences: what this covers, that they can stop after any module, and that you'll explain as you go.
-3. Read `01-getting-set-up.md` and begin.
+1. If you're Codex, read `CODEX.md`.
+2. Create the progress file.
+3. Introduce yourself in about three sentences: what this covers, that they can stop after any module, and that you'll explain as you go.
+4. Read `01-getting-set-up.md` and begin.

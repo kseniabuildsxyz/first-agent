@@ -10,7 +10,7 @@ Before starting, re-read START.md — in particular "How to read a module."
 
 ## Open
 
-> This module is about where passwords and keys belong. We'll store one properly, add two safeguards, and then look through your computer for any keys sitting somewhere they shouldn't be. Two settings get added. The last part may turn up files worth deleting, and I'll ask you about each one before anything goes. It takes about twenty minutes.
+> This module is about where passwords and keys belong. We'll store one properly, add two safeguards, and then look through your computer for any keys sitting somewhere they shouldn't be. The last part may turn up files worth deleting, and I'll ask you about each one before anything goes. It takes about twenty minutes.
 
 ## Teach: what an API key is
 
@@ -66,7 +66,7 @@ Show them where it lives so it isn't abstract. **Search for the Keychain Access 
 
 Two safeguards. Recommend both rather than asking. You write both into `~/.claude/settings.json`; they don't edit it.
 
-**Deny rules.** Add the entries from `templates/deny-rules.json` to `~/.claude/settings.json` under `permissions.deny`:
+**Deny rules.** Add the entries from `templates/deny-rules.json` to `~/.claude/settings.json` under `permissions.deny`, merging into any list already there and skipping entries it already has:
 
 > In module 2 I mentioned **deny rules**, which are a deterministic way to block specific actions on your computer, regardless of what I or the reviewer decide. I am going to add a set of deny rules now. They stop me from reading certain files at all: SSH keys, cloud credentials, and anything named like a secret. That holds even if you ask me to read one directly, so if a stray credentials file is sitting in your Downloads, I can't open it. Say stop if you'd rather not set this up.
 >
@@ -80,10 +80,10 @@ Two safeguards. Recommend both rather than asking. You write both into `~/.claud
 >
 > It has a limit too. It checks saves that agents make. If you save to version history yourself, from your own terminal, it doesn't run, because the check lives in the agent's settings rather than in the folder.
 
-**Check whether it's actually active** rather than assuming the module 5 install worked. If the plugin didn't install, wire it up by hand — you do this, not them:
+**Check whether it's actually active** rather than assuming the module 5 install worked. If the plugin didn't install, wire it up by hand — you do this, not them. Check `~/.claude/settings.json` for an existing entry first, so the check isn't wired twice:
 
 1. Copy `hooks/check-staged-secrets.sh` to `~/.claude/hooks/`.
-2. Add a `hooks` entry to `~/.claude/settings.json` pointing at it.
+2. Add a `hooks` entry to `~/.claude/settings.json` pointing at it, alongside any hooks already there.
 
 It needs `gitleaks` and `jq`, both installed in module 5.
 

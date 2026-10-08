@@ -12,7 +12,7 @@ The through-line is module 4's, applied to a second case: installing other peopl
 
 ## Open
 
-> This one is short. We'll install three small tools, then install this walkthrough itself as a plugin. It takes about five minutes, no password is needed, and nothing here asks you to make an account anywhere.
+> This one is short. We'll check for three small tools and install whichever are missing, then install this walkthrough itself as a plugin. It takes about five minutes, no password is needed, and nothing here asks you to make an account anywhere.
 
 ## Do: install the tools
 
@@ -30,13 +30,13 @@ brew install git gitleaks
 
 Add `jq` to that line only if the check above came back empty.
 
-**If module 1 deferred version history** because git wasn't usable then, turn it on now: `git init` in their `agent` folder, a `.gitignore` holding `.DS_Store`, and a first commit. Say in one line that it's done and update the progress file. If Apple's dialog does appear at any point, walk them through it — it's an Apple installer, it needs their click, and it's the same one Homebrew may have run in module 4.
+**If module 1 deferred version history** because git wasn't usable then, turn it on now: `git init` in their `first-agent` folder, a `.gitignore` holding `.DS_Store`, and a first commit. Say in one line that it's done and update the progress file. If Apple's dialog does appear at any point, walk them through it — it's an Apple installer, it needs their click, and it's the same one Homebrew may have run in module 4.
 
 Then say what each one is for:
 
-> Three tools went in, and each has a specific job later in the walkthrough.
+> You now have three tools, and each has a specific job later in the walkthrough.
 >
-> **git** is the version history tool, the one behind the restore points on your `agent` folder. Every Mac can run a version of it, but the copy Apple ships has to be installed separately and is usually older, so this installs a current one that updates along with everything else Homebrew manages.
+> **git** is the version history tool, the one behind the restore points on your `first-agent` folder. Every Mac can run a version of it, but the copy Apple ships has to be installed separately and is usually older, so this installs a current one that updates along with everything else Homebrew manages.
 >
 > **gitleaks** scans files for anything that looks like a password or a key. In module 6 we'll set it up so that it checks every change before an agent saves it into version history, and stops the save if it finds one.
 >

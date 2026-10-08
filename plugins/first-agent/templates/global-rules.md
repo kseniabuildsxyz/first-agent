@@ -40,8 +40,8 @@ These apply to every task, every skill, every project.
 
 ## Where things live
 
-- Work in progress: `~/Desktop/agent/projects/`
-- Experiments: `~/Desktop/agent/scratch/`
+- Work in progress: `~/Desktop/first-agent/projects/`
+- Experiments: `~/Desktop/first-agent/scratch/`
 - Keys and tokens: my Keychain
 - Tools you may and may not use: `~/.first-agent/mcp-log.md`
 

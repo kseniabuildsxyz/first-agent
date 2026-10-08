@@ -26,7 +26,7 @@ If they'd rather stop, close out with the section at the end and leave it there.
 
 ## Do: land on the thing
 
-Read the `## About my work` section of `~/.claude/CLAUDE.md` — the repetitive thing they'd rather not do is written there, in their words, from module 1. Propose it. If they want something else, take what they want without argument; the point is that they're motivated, not that the subject is optimal.
+Read the lines at the top of `~/.claude/CLAUDE.md`, written in module 3 — the repetitive thing they'd rather not do is there, in their words, from module 1. Propose it. If they want something else, take what they want without argument; the point is that they're motivated, not that the subject is optimal.
 
 Then scope it, holding four lines:
 
@@ -73,7 +73,7 @@ If a concrete example helps, write a short one **for what they actually chose**,
 # Weekly supplier check
 
 **For:** catching price changes before they reach an invoice, without opening twelve PDFs.
-**In:** the PDFs in ~/Desktop/agent/projects/suppliers/, one per supplier, monthly.
+**In:** the PDFs in ~/Desktop/first-agent/projects/suppliers/, one per supplier, monthly.
 **Out:** a markdown file listing any line item whose price moved more than 2% since last month.
 **Rules:** never guess at an unreadable figure — list it as unreadable. Don't edit the PDFs.
 **Done when:** I can name the changed items from the file without opening a PDF.

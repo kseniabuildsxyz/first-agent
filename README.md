@@ -2,7 +2,7 @@
 
 A guided setup that turns a new Mac into one you can build on with an AI agent — run by the agent itself.
 
-**macOS only.** Parts of this rely on Homebrew and the macOS Keychain. **Built for Claude**, in the desktop app or the terminal.
+**macOS only.** Parts of this rely on Homebrew and the macOS Keychain. **Built for Claude**, in the desktop app or the terminal. It also runs in Codex, with a short overlay the agent reads for itself.
 
 About an hour and three quarters to set your machine up, plus an optional build at the end that takes another half hour to an hour. It's designed to be stopped and picked up later, so you don't need a free afternoon. You won't write any code.
 
@@ -11,9 +11,9 @@ About an hour and three quarters to set your machine up, plus an optional build 
 You don't need to install anything first.
 
 1. Download Claude from [claude.com/download](https://claude.com/download) if you don't have it yet, install it, and sign in. A paid plan is required.
-2. **On your Desktop, make a new empty folder** called `agent`. Starting somewhere empty means the agent begins with nothing of yours in reach.
+2. **On your Desktop, make a new empty folder** called `first-agent`. Starting somewhere empty means the agent begins with nothing of yours in reach.
 3. Open Claude and click the **Code** tab at the top of the window.
-4. Choose **Local**, click **Select folder**, and pick the `agent` folder you just made.
+4. Choose **Local**, click **Select folder**, and pick the `first-agent` folder you just made.
 5. macOS will ask whether Claude can access that folder. Allow it. You may get a few more prompts for things like Photos or Google Drive — those are yours to decide and nothing here needs them.
 6. Paste this into the chat and press enter:
 
@@ -24,6 +24,10 @@ Read https://raw.githubusercontent.com/kseniabuildsxyz/first-agent/main/plugins/
 That's it. The agent takes over. It will ask you questions, install what's missing, and stop when it needs your password or your hands on a browser.
 
 You can quit partway through and pick up later — it keeps track of where you got to.
+
+### Using Codex instead
+
+Make the same `first-agent` folder on your Desktop, open Codex in the ChatGPT desktop app, and open that folder (⌘O). Allow the macOS prompt, then paste the same message. The agent recognises it's running in Codex and adjusts the steps that differ.
 
 ## What you end up with
 
@@ -37,6 +41,7 @@ You can quit partway through and pick up later — it keeps track of where you g
 | Path | What it is |
 |---|---|
 | `plugins/first-agent/START.md` | What the agent reads first |
+| `plugins/first-agent/CODEX.md` | What changes when the agent is Codex |
 | `plugins/first-agent/modules/` | The walkthrough, one file per module |
 | `plugins/first-agent/skills/` | Tools the agent keeps after setup |
 | `plugins/first-agent/templates/` | Your standing rules and deny rules, installed into `~/.claude/` |

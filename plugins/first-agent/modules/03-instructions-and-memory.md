@@ -74,7 +74,7 @@ Recommend it rather than asking:
 
 > My recommendation is to turn automatic note-taking off, and to put the handful of things that are genuinely durable into a rules file that you write and can read. A short set of rules you've read and approved is more useful than a long set that accumulated on its own, without supervision. Let me know if you'd rather keep it on.
 
-Set `"autoMemoryEnabled": false` in `~/.claude/settings.json`. Write it to the file yourself rather than sending them to a menu — it's one key, it works the same in the app and the terminal, and it puts the file in front of them, which is the point of the next paragraph.
+Set `"autoMemoryEnabled": false` in `~/.claude/settings.json`, merging it into what's already there rather than overwriting the file, and creating the file if it doesn't exist. Write it to the file yourself rather than sending them to a menu — it's one key, it works the same in the app and the terminal, and it puts the file in front of them, which is the point of the next paragraph.
 
 Then show them the file. This is the first time they see it, so name what it is:
 

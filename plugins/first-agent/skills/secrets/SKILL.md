@@ -1,4 +1,5 @@
 ---
+name: secrets
 description: Store, retrieve, list, or remove an API key, token, or password in the macOS Keychain so its value never enters a file or the conversation. Use when someone needs to save a credential, or when a task needs one that's already stored.
 ---
 

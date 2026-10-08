@@ -1,10 +1,11 @@
 ---
+name: start
 description: Start or resume the First Agent walkthrough — guided setup of a Mac for agent work. Use when someone asks to begin onboarding, set up their computer for agents, or continue where they left off.
 ---
 
 # Start the walkthrough
 
-Read `../../START.md` in this plugin for how to behave and the full module list. Follow it exactly.
+Read `../../START.md` in this plugin for how to behave and the full module list. Follow it exactly. If you are Codex, read `../../CODEX.md` as well; it applies on top of every module.
 
 Its "How to read a module" section is the one to get right: block quotes in a module are the script and are said as written, everything around them is your brief and is what you answer questions from. Re-read `START.md` before opening each module file.
 

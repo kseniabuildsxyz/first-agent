@@ -1,10 +1,11 @@
 ---
+name: add-mcp
 description: Safely adopt an MCP server — check whether a built-in connector already covers it, vet the third-party option, narrow its permissions to what's needed, install it, and verify what it added. Use when someone wants to connect a new service or install an MCP server.
 ---
 
 # Add an MCP server
 
-Four steps in order: check for an alternative, vet, narrow, verify. Do not skip to install.
+Start by enumerating what's already there (the last section). Then four steps in order: check for an alternative, vet, narrow, verify — and record the result. Do not skip to install.
 
 ## 1. Check whether this is needed
 
@@ -69,7 +70,7 @@ claude mcp add <name> -s user -e SERVER_READ_ONLY=true -- <command>
 **Your own copy.** When the server offers no switch and the tool list needs real surgery: clone it, remove the tool registrations you don't want, run that copy by absolute path. More work, and the only approach where the capability can't widen without you.
 
 ```bash
-git clone <repo> ~/Desktop/agent/projects/<name>
+git clone <repo> ~/Desktop/first-agent/projects/<name>
 # remove unwanted tool registrations, then register the local copy:
 # terminal —
 claude mcp add <name> -s user -- /absolute/path/to/server

@@ -14,7 +14,7 @@ The judgement taught here — how to look at a command someone hands you — out
 
 > This is the only module where you'll type into a terminal yourself, and the only one that needs your Mac password, typed by you. We'll install one tool, called Homebrew, and along the way I'll show you how to judge a command before you run it, which is the part you'll keep using long after today. It takes about ten minutes. The install itself is usually quick, and the one thing that can make it slow is if your Mac still needs Apple's basic developer tools, which it installs first.
 
-Check whether Homebrew is already there before teaching anything — `/opt/homebrew/bin/brew --version` — and report what you find. If it's installed and working, skip the install and the PATH step, but still teach how to judge a command.
+Check whether Homebrew is already there before teaching anything — `command -v brew`, then `/opt/homebrew/bin/brew --version` and, on an Intel Mac, `/usr/local/bin/brew --version` — and report what you find. If it's installed and working, skip the install and the PATH step, but still teach how to judge a command.
 
 ## Teach: two things about how a Mac is arranged
 
@@ -22,7 +22,7 @@ These weren't relevant in module 1. They are now.
 
 > Two things about how your Mac is organised are about to matter.
 >
-> The first is that tools you install from the terminal are installed for the whole computer, not for a particular folder. What we're about to install doesn't live in our `agent` folder and isn't tied to any project. Once it's installed it works from anywhere on this machine, and you won't need to install it again.
+> The first is that tools you install from the terminal are installed for the whole computer, not for a particular folder. What we're about to install doesn't live in our `first-agent` folder and isn't tied to any project. Once it's installed it works from anywhere on this machine, and you won't need to install it again.
 >
 > The second is that any folder or file whose name starts with a dot, often called a dotfile, is hidden. Finder doesn't show them unless you ask it to, and that's where programs keep their settings. `~/.claude`, which holds the settings file and the rules file from module 3, is one of them. So when an agent mentions a file you've never seen, it's usually hidden rather than missing. If you ever want to see hidden files in Finder, pressing "Cmd"+"Shift"+"." turns them on and off.
 
@@ -88,9 +88,9 @@ Then tell them what to expect, so silence and delay don't read as failure:
 
 Verify this yourself rather than asking them to check.
 
-**Do this silently.** It's a settings change you can make yourself, there's nothing in it for them to learn, and narrating it turns a non-event into a worry.
+**Do this without narrating it.** It's a settings change you can make yourself, there's nothing in it for them to learn, and narrating it turns a non-event into a worry. If their standing rules say to propose changes first, START.md's precedence rule applies: say in one line which file you'll add to and what, and wait for a yes.
 
-On Apple Silicon, Homebrew installs to `/opt/homebrew`, which isn't on the terminal's default search path. The result is `brew: command not found` immediately after a successful install. Check whether `~/.zprofile` exists, append to it rather than overwriting it, and add the line Homebrew names in its own "Next steps" output — easy to scroll past, which is why this step exists:
+On an Intel Mac, Homebrew installs to `/usr/local`, which is already on the terminal's search path, so skip this step. On Apple Silicon, Homebrew installs to `/opt/homebrew`, which isn't on the terminal's default search path. The result is `brew: command not found` immediately after a successful install. Check `~/.zprofile` and `~/.zshrc` for an existing `brew shellenv` line first. If one is there, don't add another. Otherwise, check whether `~/.zprofile` exists, append to it rather than overwriting it, and add the line Homebrew names in its own "Next steps" output — easy to scroll past, which is why this step exists:
 
 ```
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -111,11 +111,11 @@ What they should be able to do afterwards: look at a command someone hands them 
 
 If they push further, these are true and worth having ready:
 
-- **"Is Homebrew itself safe?"** It's open source, maintained by a named project, widely used, and installed from its own domain, which is what the four questions check. It installs software other people wrote, so what they install with it deserves the same questions.
-- **"What did the installer change on my computer?"** It installed Homebrew into `/opt/homebrew`, possibly Apple's Command Line Tools, and nothing in their documents. The `~/.zprofile` line is the only settings change, and you wrote it.
+- **"Is Homebrew itself safe?"** It's open source, maintained by a named project, widely used, and installed from its own domain, which is what the command check looks for. It installs software other people wrote, so what they install with it deserves the same questions.
+- **"What did the installer change on my computer?"** It installed Homebrew into `/opt/homebrew`, possibly Apple's Command Line Tools, and nothing in their documents. The `brew shellenv` line is the only settings change, and you wrote it, unless one was already there.
 - **"Why did it need my password?"** Creating `/opt/homebrew` and installing the Command Line Tools both write to parts of the system that need administrator permission.
 - **"How do I remove something I installed?"** `brew uninstall` followed by its name. Homebrew itself has an uninstall script published on brew.sh.
-- **"What was that `.zprofile` change you made?"** One line that tells the terminal where to find Homebrew. Show them the file if they ask; it's theirs.
+- **"What was that settings change you made?"** One line that tells the terminal where to find Homebrew. Show them the file if they ask; it's theirs.
 
 ## Checkpoint
 
@@ -126,4 +126,4 @@ Last module completed: 4
 Next: 5
 ```
 
-> Next is short: three small tools installed with Homebrew, and then installing this walkthrough onto your computer. So far I've been reading it off the internet, and installing it puts the modules on your machine along with a few commands that stay useful after we're finished. It takes about five minutes. Would you like to keep going?
+> Next is short: three small tools, installed with Homebrew where they're missing, and then installing this walkthrough onto your computer. So far I've been reading it off the internet, and installing it puts the modules on your machine along with a few commands that stay useful after we're finished. It takes about five minutes. Would you like to keep going?

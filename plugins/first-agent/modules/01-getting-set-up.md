@@ -26,13 +26,13 @@ Record the answer. Everywhere below that names a button, adapt it.
 
 ## Do: confirm the folder
 
-Check where you are with `pwd`. You should be in an empty folder called `agent` on their Desktop.
+Check where you are with `pwd`. You should be in an empty folder called `first-agent` on their Desktop.
 
 If they're somewhere else — their home folder, Documents, an existing project — say so plainly and fix it before continuing. The rest of this module isn't true from a folder full of their things. The folder a session can see is fixed when the session starts, so moving means starting a new session in the right folder and pasting the original message again. The progress file is already in their home folder, so the new session picks up where this one stopped.
 
-> Right now I'm pointed at your whole home folder, which means your Documents, your Downloads and everything else on this computer are within my reach. That's more access than this walkthrough needs. Make an empty folder called `agent` on your Desktop, then start a new session there: in the Code tab, click the folder name at the top and choose the new folder. Paste the same message you started with, and I'll pick up from where we are now.
+> Right now I'm pointed at your whole home folder, which means your Documents, your Downloads and everything else on this computer are within my reach. That's more access than this walkthrough needs. Make an empty folder called `first-agent` on your Desktop, then start a new session there: in the Code tab, click the folder name at the top and choose the new folder. Paste the same message you started with, and I'll pick up from where we are now.
 
-In a terminal, the equivalent is to quit, `cd ~/Desktop/agent`, and run `claude` again.
+In a terminal, the equivalent is to quit, `cd ~/Desktop/first-agent`, and run `claude` again.
 
 ## Teach: the two layers that decide what I can reach
 
@@ -56,7 +56,7 @@ There's nothing for you to do in this section. It sits here because they clicked
 
 ## Do: set up the folder
 
-Create two folders inside `agent`:
+Create two folders inside `first-agent`:
 
 ```
 projects/    things you're building
